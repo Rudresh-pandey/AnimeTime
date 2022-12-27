@@ -1,0 +1,109 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+.navbar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+#main-title{
+    font-family: cursive;
+    font-size: 45px;
+    font-weight: 700;
+}
+.links{
+    margin-left: 25px;
+    display: flex;
+}
+.page-link{
+    padding: 2px 5px;
+    text-decoration: none;
+    color: black;
+    border-bottom: 2px solid white;
+}
+
+.page-link:hover{
+    font-weight: 600;
+    background-color: #6666660a;
+    border-bottom: 2px solid black;
+}
+
+#searchBox{
+    margin-top: 80px;
+    width: 300px;
+    height: 25px;
+    font-size: 20px;
+    padding: 3px 5px;
+    font-weight: 700;
+}
+
+.animeList{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.Anime-Card{
+    margin-top: 50px;
+    display: flex;
+    max-width: 900px;
+    margin: 100px auto 0px auto;
+}
+
+.Anime-img{
+    height: 270px;
+    width: 250px;
+    border: 1px solid black;
+}
+
+.animecard{
+    margin-left:10px;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+}
+
+.AnimeHeading{
+    margin-top: -20px;
+    font-size: 55px;
+    font-weight: 700;
+}
+
+.ratings{
+    display: flex;
+
+}
+
+.IMDb-rating{
+    background-color: yellow;
+    padding: 2px 4px;
+    font-weight: 700;
+    font-size: 20px;
+    margin-right: 50px;
+}
+
+.Rotten-rating{
+
+    background-color: rgb(253, 26, 26);
+    padding: 2px 4px;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.seasons{
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.animeDesc{
+    font-size: 18px;
+    font-weight: 650;
+    word-wrap:break-word;
+}
