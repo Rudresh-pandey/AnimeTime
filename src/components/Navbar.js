@@ -1,7 +1,7 @@
 import React from 'react'
 import './style.css'
 
-function Navbar() {
+function Navbar({ filterAnime }) {
     return (
         <>
             <div className="navbar">
@@ -18,9 +18,19 @@ function Navbar() {
                     </div>
                 </div>
 
-                <input id='searchBox' type="text" />
+                <div className='S_C'>
+                    <input id='searchBox' type="text" />
+                    <div className="category">
 
+                        <button className='btn-group' onClick={() => filterAnime("Action")}>Action</button>
+                        <button className='btn-group' onClick={() => filterAnime("War")}>War</button>
+                        <button className='btn-group' onClick={() => filterAnime("Thriller")}>Thriller</button>
+                        <button className='btn-group' onClick={() => filterAnime("Romance")}>Romance</button>
+                        <button className='btn-group' onClick={() => filterAnime("Fantasy")}>Fantasy</button>
+                        <button className='btn-group' onClick={() => filterAnime("All")}>All</button>
 
+                    </div>
+                </div>
 
 
             </div>

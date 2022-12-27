@@ -19,7 +19,7 @@
     font-weight: 700;
 }
 .links{
-    margin-left: 25px;
+    margin-left: 15px;
     display: flex;
 }
 .page-link{
@@ -37,7 +37,7 @@
 
 #searchBox{
     margin-top: 80px;
-    width: 300px;
+    width: 400px;
     height: 25px;
     font-size: 20px;
     padding: 3px 5px;
@@ -106,4 +106,26 @@
     font-size: 18px;
     font-weight: 650;
     word-wrap:break-word;
+}
+
+
+
+.category{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    /* max-width: 300px; */
+}
+
+.btn-group{
+    margin: 10px 10px 0px 10px;   
+    padding: 3px 2px;
+    border: none;
+    font-weight: bold;
+}
+
+.btn-group:hover{
+    /* font-weight: bold; */
+    border: none;
+    background-color: antiquewhite;
+    transition: 0.2s;
 }
