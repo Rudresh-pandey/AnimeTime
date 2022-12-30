@@ -20,7 +20,7 @@ function Navbar({ filterAnime, findAnime, searchInput }) {
                 </div>
 
                 <div className='S_C'>
-                    <input id='searchBox' type="text" onChange={findAnime} value={searchInput} />
+                    <input id='searchBox' type="search" onChange={findAnime} value={searchInput} placeholder="Search anime " />
                     <div className="category">
 
                         <button className='btn-group' onClick={() => filterAnime("Action")}>Action</button>

@@ -7,11 +7,11 @@ function Anime({ DemoData }) {
         <>
             <div className='animeList'>
                 {
-                    DemoData.map((currEle) => {
-                        const { id, image, name, imdb, tomato, seasons, eps, desc } = currEle;
+                    DemoData.map((currEle, i) => {
+                        const { image, name, imdb, tomato, seasons, eps, desc } = currEle;
                         return (
                             <>
-                                <div className='Anime-Card' key={id}>
+                                <div className='Anime-Card' key={i}>
                                     <img className='Anime-img' src={image} alt="" />
                                     <div className='animecard'>
                                         <p className='AnimeHeading' >{name}</p>
