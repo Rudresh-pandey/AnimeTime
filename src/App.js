@@ -11,16 +11,19 @@ function App() {
   const [searchInput, SetSearchInput] = useState("");
 
   const findAnime = (e) => {
-    // e.preventDefault();
+
     SetSearchInput(e.target.value);
-    if (searchInput.length === 0) {
-      setAnimeData(DemoData);
-      return;
+    if (searchInput.length > 0) {
+      // console.log(searchInput.length);
+      // setAnimeData(DemoData);
+      // return;
+      const SearchedAnime = DemoData.filter((ele) => {
+        const DataName = ele.name.toLowerCase();
+        return DataName.match(searchInput.toLowerCase());
+      })
+      setAnimeData(SearchedAnime);
     }
-    const SearchedAnime = DemoData.filter((ele) => {
-      return ele.name.match(searchInput);
-    })
-    setAnimeData(SearchedAnime);
+
   }
 
   const filterAnime = (category) => {
