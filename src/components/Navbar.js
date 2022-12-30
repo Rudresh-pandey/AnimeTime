@@ -1,7 +1,8 @@
 import React from 'react'
+
 import './style.css'
 
-function Navbar({ filterAnime }) {
+function Navbar({ filterAnime, findAnime, searchInput }) {
     return (
         <>
             <div className="navbar">
@@ -19,7 +20,7 @@ function Navbar({ filterAnime }) {
                 </div>
 
                 <div className='S_C'>
-                    <input id='searchBox' type="text" />
+                    <input id='searchBox' type="text" onChange={findAnime} value={searchInput} />
                     <div className="category">
 
                         <button className='btn-group' onClick={() => filterAnime("Action")}>Action</button>
